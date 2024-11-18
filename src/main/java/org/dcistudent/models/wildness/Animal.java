@@ -4,9 +4,10 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
+import org.dcistudent.models.interfaces.wildness.AnimalInterface;
 
 @Getter @Setter
-public class Animal {
+public class Animal implements AnimalInterface {
     private String name;
     private int age;
 
