@@ -1,6 +1,7 @@
 package org.dcistudent.models.wildness;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 @Getter @Setter
@@ -14,7 +15,7 @@ public class Dog extends Animal {
      * @param age The age of the dog.
      * @param furColor The color of the dog's fur.
      */
-    public Dog(String name, int age, String furColor) {
+    public Dog(@NonNull String name, @NonNull int age, @NonNull String furColor) {
         super(name, age);
         this.setFurColor(furColor);
     }

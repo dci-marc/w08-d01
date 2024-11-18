@@ -1,6 +1,7 @@
 package org.dcistudent.models.wildness;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 
 @Getter @Setter
@@ -14,7 +15,7 @@ public class Animal {
      * @param name The name of the animal.
      * @param age The age of the animal.
      */
-    public Animal(String name, int age) {
+    public Animal(@NonNull String name, @NonNull int age) {
         this.setName(name);
         this.setAge(age);
     }
